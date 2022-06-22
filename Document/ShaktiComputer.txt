@@ -1,0 +1,133 @@
+Shakti Computers
+# Description
+
+	It is a project which provides communication between customer who wants service or spare part related to computer/laptop 
+and shop manager who owns a shop related to PC hardware or software & provides sales and service to customers. And Technician who works @ shop 
+and provides service to the customer according to requirements. After completion of customer tasks technitian can create work report in 
+which technician stores details related to work using notes / audio recording. Acooriding to work report project will give increment 
+automatically.
+
+# There are main three roles
+	Admin(shop owner)
+	Technician
+	Customer
+
+# List of Webpages	
+	
+# Admin
+1. Registration
+	id,name,password,email,mobile,regdate
+
+2. Login
+	id,password
+
+3. Forgotpassword
+        email,mobile
+
+4. Change Password
+
+        password,newpassword,confirmpassword
+5. Home
+
+6. Myaccount
+
+7. Update Account
+        id,name,password,email,mobile,regdate
+
+8. Create/Manage/Show/Search/View Details Customer
+        name,mobile,pincode,address,photo,email,username,password
+
+13. CMSSV Technician
+        name,mobile,pincode,address,photo,email,joindate
+
+18. CMSSV work report
+        name,orderdate,orderno,work
+
+23. CMSSV order
+        orderno,orderdate,pr_name,pr_price,pr_type,pr_brand,delivery_add,customer_id
+
+28. CMSSV brand
+        brand_name,brand_regdate,brand_type,brand_product
+
+33. CMSSV type
+        type_brand,type_regdate,type_availabity
+
+38. block / unblock customer
+39. block / unblock technician
+40. show feedback
+       customer_id,date,message,suggestion
+41. logout
+
+# Technician
+
+1. Registration
+    name,id,mobileno,email,password,regdate
+
+2. Login 
+    id,password
+3. Forgotpassword
+    email,mobile
+ 
+4. Change Password
+   password,newpassword,confirmpassword
+
+5. Home
+6. Myaccount
+7. Update Account
+    name,id,mobileno,email,password,regdate
+8. Create/Manage/Show/Search/View Details work report
+    name,id,mobileno,orderno,orderdetails,work_audio,comp_date
+13. show feedback
+    customer_id,date,message,suggestion
+
+14. logout
+15. about us
+16. contact us
+17. show orders
+    orderno,orderdate,pr_name,pr_price,pr_type,pr_brand,delivery_add,customer_id
+
+18. accept order
+    orderno,orderdate
+
+19. order history
+    orderno,orderdate,pr_name,pr_price,pr_type,pr_brand,delivery_add,customer_id
+
+# Customer
+
+1. Registration
+    name,id,mobileno,email,password,regdate
+
+2. Login
+    id,password
+
+3. Forgotpassword
+   email,mobile
+
+4. Change Password
+   password,newpassword,confirmpassword
+
+5. Home
+
+6. Myaccount
+
+7. Update Account
+    name,id,mobileno,email,password,regdate
+
+8.CMSSV order
+        orderno,orderdate,pr_name,pr_price,pr_type,pr_brand,delivery_add,customer_id
+
+13. logout
+14. about us
+15. search product
+    product_name
+
+16. view product
+    product_name,product_photo,product-price,product_brand,product_type,product_warranty
+    
+17. contact us    
+
+18. order history
+    orderno,orderdate,pr_name,pr_price,pr_type,pr_brand,delivery_add
+
+
+	

@@ -1,0 +1,157 @@
+create database Admin;
+
+Create table Admin
+( 
+Adminid int primary key AUTO_INCREMENT, 
+FirstName varchar(50), 
+LastName varchar(50), 
+Email varchar(20), 
+PhoneNo decimal(10,0), 
+Photo varchar(500), 
+Regdate DATETIME, 
+Username varchar(20), 
+Passcode varchar(20) 
+);
+
+
+
+Create table Technician(
+TechnicianId int primary key AUTO_INCREMENT,
+FirstName varchar(50),
+LastName varchar(50),
+Address varchar(200),
+Pincode int,
+Email varchar(50),
+Phone decimal(10,0),
+Photo varchar(MAX),
+DOJ datetime,
+Username varchar(50),
+Password varchar(50) 
+);
+
+
+Create table Customer( 
+CustomerId int primary key AUTO_INCREMENT, 
+FirstName varchar(50),
+LastName varchar(50), 
+Address varchar(200), 
+Pincode int, 
+Email varchar(50), 
+Birthdate datetime, 
+Gender varchar(5), 
+Phone decimal(10,0), 
+Photo varchar(32756), 
+Username varchar(50), 
+Password varchar(50) 
+);
+
+Create table Brand(
+BrandId int primary key AUTO_INCREMENT, 
+BrandName varchar(20), 
+BrandLogo varchar(32756), 
+DOJ datetime 
+);
+
+
+Create table Product( 
+ProductId int Primary key AUTO_INCREMENT, 
+ProductName varchar(50), 
+CategoryId int,
+BrandId int , 
+BrandName varchar(50), 
+Photo varchar(32756), 
+DOJ datetime, 
+Price int, 
+FOREIGN KEY (BrandId) REFERENCES Brand(BrandId) ,
+foreign key (CaregoryId) refences Category(CategoryId)
+);
+
+
+Create Table Problem(
+ProblemId int primary key AUTO_INCREMENT,
+ProblemDesc varchar(65000),
+ProblemSol varchar(65000),
+TechnicianId Int,
+CustomerId Int,
+Foreign Key(TechnicianId)  Technician(TechnicianId)
+Foreign Key(CustomerId) Customer(CustomerId)
+);
+
+Create table Category( 
+CategoryId int primary key AUTO_INCREMENT, 
+CategoryName varchar(50) 
+);
+
+Create table workreport( 
+Workreportid int primary key AUTO_INCREMENT, 
+TechnicianId int, 
+Workhours datetime, 
+Date datetime, 
+ProblemId int, 
+Problemsol varchar(50), 
+Foreign Key(ProblemId) references Problem(ProblemId), 
+Foreign Key(technicianid) references technician(technicianid) 
+);
+
+
+Create table Recordedsoloution( 
+SolutionId int primary key AUTO_INCREMENT, 
+TechnicianId int, 
+ProblemId int, 
+ProblemSol varchar(50), 
+Foreign key(TechnicianId) references technician(TechnicianId), 
+Foreign key(ProblemId) references problem(ProblemId) 
+);
+
+Create table complaint( 
+Complaintid int primary key AUTO_INCREMENT, 
+Customerid int, 
+Complaintdesc varchar(100), 
+Foreign key(Customerid) references customer(CustomerId) 
+);
+
+create table tblorder( 
+Ordereid int primary key AUTO_INCREMENT, 
+Customerid int, 
+Productid int, 
+Productname varchar(50), 
+Deliveryadd varchar(100), 
+Pincode int, 
+Orderdate datetime, 
+Totalamount int, 
+Foreign key(Customerid) references customer(CustomerId), 
+Foreign key(Productid) references product(ProductId) 
+);
+
+Create table advice( 
+AdviceId int primary key AUTO_INCREMENT, 
+Technicianid int, 
+Advice varchar(100), 
+Foreign Key(Technicianid) references technician(TechnicianId) 
+);
+
+Create table t_contact(
+ ContactId int Primary key AUTO_INCREMENT,
+ TechnicianId int(10), 
+Query varchar(50), 
+Foreign Key(TechnicianId) References technician(TechnicianId) 
+);
+
+Create table bill(
+ProblemId int,
+TechnicianId int,
+CustomerId int,
+Amount int,
+Foreign Key(Technicianid) references technician(TechnicianId),
+Foreign Key(Problem) references problem(ProblemId),
+Foreign Key(CustomerId) references customer(CustomerId)
+);
+
+
+
+
+
+
+
+
+

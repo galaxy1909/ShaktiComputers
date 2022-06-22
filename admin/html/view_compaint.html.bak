@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <title>VP admin</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/custom.css">  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+	  <script src="../js/admin.js" language="javascript"></script>
+  </head>
+  <body>
+  
+
+
+
+<div class="wrapper">
+
+
+<div class="body-overlay"></div>
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img src="../img/logo.png" class="img-fluid"/><span>Shakti Computer</span></h3>
+            </div>
+            <ul class="list-unstyled components">
+			<li  class="active">
+                    <a href="admin.html" class="dashboard"><i class="material-icons">dashboard</i><span>Dashboard</span></a>
+                </li>
+		
+		      <div class="small-screen navbar-display">
+                <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="#homeSubmenu0" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+					<i class="material-icons">notifications</i><span> 4 notification</span></a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu0">
+                                    <li>
+                                    <a href="#">You have new order</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You have mail in your inbox</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You have meeting with client</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Technician is on leave</a>
+                                    </li>
+                    </ul>
+                </li>
+				
+				<li  class="d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="#"><i class="material-icons">apps</i><span>apps</span></a>
+                </li>
+				
+				 <li  class="d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="#"><i class="material-icons">user</i><span>user</span></a>
+                </li>
+				
+				<li  class="d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="#"><i class="material-icons">settings</i><span>setting</span></a>
+                </li>
+				</div>
+			
+                <li>
+                    <a href="adminaccount.html" class="dashboard"><i class="material-icons">account_circle</i><span>My Account</span></a>
+                </li>
+                <li>
+                    
+                    <a href="updateaccount.html" class="dashboard"><i class="material-icons">account_circle</i><span>Update Account</span></a>
+                </li>
+                <li>
+                    <a href="changepassword.html" class="dashboard"><i class="material-icons">lock</i><span>Change Password</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+					<i class="material-icons">add_circle</i><span>Create</span></a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+                        <li>
+                            <a href="create_technician.html"><i class="material-icons">account_circle</i>Technician</a>
+                        </li>
+                        <li>
+                            <a href="create_user.html"><i class="material-icons">account_circle</i>User</a>
+                        </li>
+                        <li>
+                            <li>
+                                <a href="create_admin.html"><i class="material-icons">account_circle</i>Admin</a>
+                            </li>
+                        <li>
+                            <a href="create_order.html"><i class="material-icons">list_alt</i>Order</a>
+                        </li>
+                        <li>
+                            <a href="create_product.html"><i class="material-icons">list</i>Product/Item</a>
+                        </li>
+						<li>
+                            <a href="create_brand.html"><i class="material-icons">list</i>Brand</a>
+                        </li>
+						<li>
+                            <a href="create_category.html"><i class="material-icons">list</i>category</a>
+                        </li>
+						<li>
+                            <a href="create_problem.html"><i class="material-icons">list</i>Problem</a>
+                        </li>
+						<li>
+                            <a href="create_compaint.html"><i class="material-icons">list</i>Complaint</a>
+                        </li>
+						<li>
+                            <a href="create_workreport.html"><i class="material-icons">list</i>Work Report</a>
+                        </li>
+						<li>
+                            <a href="create_solution.html"><i class="material-icons">list</i>Problem Solution</a>
+                        </li>
+                        <li>
+                            <a href="create_advicetotechnician.html"><i class="material-icons">feedback</i>Advice to Technician</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+					<i class="material-icons">visibility</i><span>View</span></a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu2">
+                       <li>
+                            <a href="view_technician.html"><i class="material-icons">account_circle</i>Technician</a>
+                        </li>
+                        <li>
+                            <a href="view_user.html"><i class="material-icons">account_circle</i>User</a>
+                        </li>
+                        <li>
+                            <li>
+                                <a href="view_admin.html"><i class="material-icons">account_circle</i>Admin</a>
+                            </li>
+                        <li>
+                            <a href="view_order.html"><i class="material-icons">list_alt</i>Order</a>
+                        </li>
+                        <li>
+                            <a href="view_product.html"><i class="material-icons">list</i>Product/Item</a>
+                        </li>
+						<li>
+                            <a href="view_brand.html"><i class="material-icons">list</i>Brand</a>
+                        </li>
+						<li>
+                            <a href="view_category.html"><i class="material-icons">list</i>category</a>
+                        </li>
+						<li>
+                            <a href="view_problem.html"><i class="material-icons">list</i>Problem</a>
+                        </li>
+						<li>
+                            <a href="view_compaint.html"><i class="material-icons">list</i>Complaint</a>
+                        </li>
+						<li>
+                            <a href="view_workreport.html"><i class="material-icons">list</i>Work Report</a>
+                        </li>
+						<li>
+                            <a href="view_solution.html"><i class="material-icons">list</i>Problem Solution</a>
+                        </li>
+                        <li>
+                            <a href="view_advicetotechnician.html"><i class="material-icons">feedback</i>Advice to Technician</a>
+                        </li>
+                    </ul>
+                </li>
+				<li class="dropdown">
+                    <a href="#homeSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+					<i class="material-icons">add_circle</i><span>Manage</span></a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu4">
+                        <li>
+                            <a href="manage_technician.html"><i class="material-icons">account_circle</i>Technician</a>
+                        </li>
+                        <li>
+                            <a href="manage_user.html"><i class="material-icons">account_circle</i>User</a>
+                        </li>
+                        <li>
+                            <li>
+                                <a href="manage_admin.html"><i class="material-icons">account_circle</i>Admin</a>
+                            </li>
+                        <li>
+                            <a href="manage_order.html"><i class="material-icons">list_alt</i>Order</a>
+                        </li>
+                        <li>
+                            <a href="manage_product.html"><i class="material-icons">list</i>Product/Item</a>
+                        </li>
+						<li>
+                            <a href="manage_brand.html"><i class="material-icons">list</i>Brand</a>
+                        </li>
+						<li>
+                            <a href="manage_category.html"><i class="material-icons">list</i>category</a>
+                        </li>
+						<li>
+                            <a href="manage_problem.html"><i class="material-icons">list</i>Problem</a>
+                        </li>
+						<li>
+                            <a href="manage_compaint.html"><i class="material-icons">list</i>Complaint</a>
+                        </li>
+						<li>
+                            <a href="manage_workreport.html"><i class="material-icons">list</i>Work Report</a>
+                        </li>
+						<li>
+                            <a href="manage_solution.html"><i class="material-icons">list</i>Problem Solution</a>
+                        </li>
+                        <li>
+                            <a href="manage_advicetotechnician.html"><i class="material-icons">feedback</i>Advice to Technician</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+					<i class="material-icons">block</i><span>Block/Delete</span></a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu3">
+                        <li>
+                            <a href="block_technician.html">Techinician</a>
+                        </li>
+                        <li>
+                            <a href="block_user.html">User</a>
+                        </li>
+                    </ul>
+                </li>
+                
+               <li class="">
+                    <a href="logout.html"><i class="material-icons">logout</i><span>Logout</span></a>
+                </li>        
+             </ul>    
+        </nav>
+        <div id="content">
+		<div class="top-navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
+                        <span class="material-icons">arrow_back_ios</span>
+                    </button>
+                    <a class="navbar-brand" href="admin.html"> Dashboard </a>
+					
+                    <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="material-icons">more_vert</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">   
+                            <li class="dropdown nav-item active">
+                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                   <span class="material-icons">notifications</span>
+								   <span class="notification">0</span>
+                               </a>
+                                <ul class="dropdown-menu">
+                               
+                                  
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+								<span class="material-icons">apps</span>
+								</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+								<span class="material-icons">person</span>
+								</a>
+                            </li>
+							<li class="nav-item">
+                                <a class="nav-link" href="#">
+								<span class="material-icons">settings</span>
+								</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+	    </div>
+<div class="form">
+  <h2 class="form-heading"><strong>View Complaint</strong></h2>
+</div>
+<footer class="footer">
+                <div class="container-fluid">
+				  <div class="row">
+				  <div class="col-md-6">
+                    <nav class="d-flex">
+                        <ul class="m-0 p-0">
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Company Info
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Statistics
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                   
+                </div>
+				<div class="col-md-6">
+				 <p class="copyright d-flex justify-content-end"> &copy 2021 Design by &nbsp;
+                        <a href="#"> &nbsp; Shakti Computer </a>&nbsp;  Admin Dashboard
+                    </p>
+				</div>
+				  </div>
+				    </div>
+            </footer>
+					
+					</div>
+ </div>
+    </div>
+   <script src="../js/jquery-3.3.1.slim.min.js"></script>
+   <script src="../js/popper.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+   <script src="../js/jquery-3.3.1.min.js"></script>
+  
+  
+  <script type="text/javascript">
+  $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+				$('#content').toggleClass('active');
+            });
+			
+			 $('.more-button,.body-overlay').on('click', function () {
+                $('#sidebar,.body-overlay').toggleClass('show-nav');
+            });
+			
+        });
+</script>
+</body>
+  
+  </html>
+
+
